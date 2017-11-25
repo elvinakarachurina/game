@@ -12,7 +12,7 @@ int scoreR = 0;
 
 int winScore = 2;
 void setup() {
-  size(500,500);
+  fullScreen();
   
   x = width/2;
   y = height/2;
@@ -60,6 +60,7 @@ void drawPaddles() {
 
 void movePaddle() {
   if (upL) {
+    println(paddleYL);
     paddleYL = paddleYL - paddleS;
   }
   if (downL) {
