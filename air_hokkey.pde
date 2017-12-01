@@ -12,7 +12,7 @@ int scoreR = 0;
 
 int winScore = 2;
 void setup() {
-  fullScreen();
+  size(500,500);
   
   x = width/2;
   y = height/2;
@@ -138,11 +138,11 @@ void scores() {
 
 void gameOver() {
   if(scoreL == winScore) {
-    gameOverPage("Увожусик зелёным", colorL);
+    gameOverPage("Увожусик зелёному", colorL);
   }
   
   if(scoreR == winScore) {
-    gameOverPage("Поздравлюсик жёлтых", colorR);
+    gameOverPage("Поздравлюсик жёлтому", colorR);
   }
 }
 
